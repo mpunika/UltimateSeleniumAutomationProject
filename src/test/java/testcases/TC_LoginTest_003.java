@@ -1,16 +1,20 @@
 package testcases;
 
 import basetest.BaseTest;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TC_LoginTest_003 extends BaseTest {
 
     private String expectedTitle = "Guru99 Bank Manager HomePage";
+    public static Logger logger ;
 
     @Test
     public void loginTest003() throws InterruptedException {
-
+        logger = LogManager.getLogger(TC_LoginTest_003.class);
+        logger.info("Test has Started");
         loginPage.setUserName(txtUserName);
         loginPage.setPassword(txtPasword);
         Thread.sleep(2000);
@@ -25,5 +29,6 @@ public class TC_LoginTest_003 extends BaseTest {
             Assert.assertTrue(false,"Test Failed");
             logger.info("Test has Passed");
         }
+        logger.info("Test has Finished");
     }
 }

@@ -1,8 +1,7 @@
 package basetest;
 
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -24,9 +23,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp(){
-       logger = LogManager.getLogger(BaseTest.class);
 
-        logger.info("Test has Started");
 
       System.setProperty("webdriver.chrome.driver",".//Drivers//chromedriver.exe");
       driver = new ChromeDriver();
@@ -42,6 +39,6 @@ public class BaseTest {
     @AfterMethod
     public void tearDown(){
       driver.quit();
-      logger.info("Test has finished");
+
     }
 }

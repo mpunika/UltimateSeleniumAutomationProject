@@ -1,0 +1,7 @@
+2022-10-12 04:05:44,361  INFO [main] TC_LoginTest_001:18 - Test has Started
+2022-10-12 04:05:51,401  INFO [main] TC_LoginTest_001:28 - Test has Passed
+2022-10-12 04:05:51,402  INFO [main] TC_LoginTest_001:33 - Test has Finished
+2022-10-12 04:06:02,234  INFO [main] TC_LoginTest_002:16 - Test has Started
+2022-10-12 04:06:17,217  INFO [main] TC_LoginTest_003:17 - Test has Started
+2022-10-12 04:06:20,654  INFO [main] TC_LoginTest_003:27 - Test has Passed
+2022-10-12 04:06:20,655  INFO [main] TC_LoginTest_003:32 - Test has Finished
